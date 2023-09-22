@@ -1,2 +1,2 @@
 # Dice
-HTML / CSS en gridövning
+HTML / CSS en gridövning hej och hå
