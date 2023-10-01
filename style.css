@@ -1,0 +1,75 @@
+*,
+* ::before,
+* ::after {
+ box-sizing: border-box;
+ margin:0;
+ padding:0;
+}
+
+body {
+    background-color:rgb(182, 190, 241);
+    display: flex;
+    flex-wrap:wrap;
+}
+
+header { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+}
+
+main {
+    margin: 4rem;  
+}
+
+h2 {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+section {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 8px;
+}
+
+.dot {
+    background-color: black;
+    border-radius: 50%;
+    
+    margin: 4px;
+}
+
+.top {
+    grid-column-start: 1;
+}
+.middle {
+    grid-column-start: 2;
+}
+.bottom {
+    grid-column-start: 3;
+}
+.left {
+    grid-row-start: 1;
+}
+.center {
+    grid-row-start: 2;
+}
+.right {
+    grid-row-start: 3;
+}
